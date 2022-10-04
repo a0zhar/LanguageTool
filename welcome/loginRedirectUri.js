@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=location.href.match(/email=(.+?)(&|$|#)/),e=location.href.match(/token=(.+?)(&|$|#)/);if(o&&e){const t=decodeURIComponent(o[1]),c=decodeURIComponent(e[1]),n=JSON.stringify([t,c]);try{browser.storage.local.set({loginCredentials:n})}catch(o){}}setTimeout((()=>{window.close()}),200)})();
